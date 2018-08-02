@@ -1,3 +1,14 @@
-<ul>
-    <li *ngFor="let item of shoppingList">{{item.name}} {{item.amount}} {{item.unit}}</li>
-</ul>
+<div class="row">
+    <div class="col-xs-12">
+        <app-shopping-edit></app-shopping-edit>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" *ngFor="let ingredient of ingredients">{{ingredient.name}} ({{ingredient.amount}})</li>
+            </ul>
+        </div>
+    </div>
+</div>
