@@ -11,6 +11,12 @@ export class ShoppingListComponent {
         new Ingredient('apple', 10),
         new Ingredient('tomato', 5)
     ];
-    constructor() {
+    constructor() {}
+
+    /**
+     * @param {Ingredient} ingredient
+     */
+    ingredientsAddedHandler(ingredient: Ingredient) {
+        this.ingredients.push(ingredient);
     }
 }

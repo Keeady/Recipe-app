@@ -3,17 +3,17 @@
         <form>
             <div class="form-row">
                 <div class="form-group col-md-10">
-                    <label for="inputCity">Name</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <label for="recipeName">Name</label>
+                    <input type="text" class="form-control" id="recipeName" #ingredientName>
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="inputZip">Amount</label>
-                    <input type="text" class="form-control" id="inputZip">
+                    <label for="recipeAmount">Amount</label>
+                    <input type="text" class="form-control" id="recipeAmount" #ingredientAmount>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-12" >
-                    <input type="submit" class="btn btn-sm btn-success" value="Add">
+                    <input type="submit" class="btn btn-sm btn-success" value="Add" (click)="addIngredients(ingredientName.value, ingredientAmount.value)">
                     <input type="button" class="btn btn-sm btn-danger" value="Delete">
                     <input type="submit" class="btn btn-sm btn-secondary" value="Clear">
                 </div>

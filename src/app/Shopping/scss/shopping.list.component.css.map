@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAiB;EACf,YAAY,EAAE,CAAC",
+"sources": ["shopping.list.component.scss"],
+"names": [],
+"file": "shopping.list.component.css"
+}

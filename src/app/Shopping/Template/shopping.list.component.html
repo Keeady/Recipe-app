@@ -1,15 +1,15 @@
-<div class="row">
-    <div class="col-xs-12">
-        <h1 class="display-4">Your Shopping</h1>
-        <app-shopping-edit></app-shopping-edit>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <app-shopping-edit (addIngredientsEvent)="ingredientsAddedHandler($event)"></app-shopping-edit>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <div class="card">
-            <ul class="list-group list-group-flush">
+    <div class="row">
+        <div class="col-sm-12 ingredient-list">
+            <ul class="list-group">
                 <li class="list-group-item" *ngFor="let ingredient of ingredients">{{ingredient.name}} ({{ingredient.amount}})</li>
             </ul>
         </div>
     </div>
 </div>
+
