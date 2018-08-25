@@ -1,0 +1,11 @@
+.recipe-item-card {
+  margin-bottom: 20px; }
+  .recipe-item-card .recipe-item-body {
+    display: flex;
+    align-items: stretch; }
+  .recipe-item-card .recipe-item-img {
+    text-align: right; }
+    .recipe-item-card .recipe-item-img .recipe-item-img-thumbnail {
+      max-height: 50px; }
+
+/*# sourceMappingURL=recipe-item.component.css.map */

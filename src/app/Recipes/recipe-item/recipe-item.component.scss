@@ -1,0 +1,17 @@
+.recipe-item-card {
+    margin-bottom: 20px;
+
+    .recipe-item-body {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .recipe-item-img {
+        text-align: right;
+
+        .recipe-item-img-thumbnail {
+            max-height: 50px;
+        }
+    }
+}
+

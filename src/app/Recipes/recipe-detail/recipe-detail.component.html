@@ -1,12 +1,12 @@
-<!--todo use bootstrap card with image -->
 <div class="row">
     <div class="col-xs-12">
         <div class="card">
-            <img class="card-img-top img-fluid" src="" alt="">
+            <img class="card-img-top img-fluid" src="{{recipeDetails.imagePath}}" alt="">
             <div class="card-body">
-                <h5 class="card-title">some recipe</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Do something</a>
+                <h5 class="card-title">{{recipeDetails.name}}</h5>
+                <ng-content></ng-content>
+                <p class="card-text">{{recipeDetails.description}}</p>
+                <a href="#" class="btn btn-primary" (click)="doSomething($event)">Do something</a>
             </div>
         </div>
     </div>
